@@ -1,6 +1,14 @@
 @import '../var.scss';
 
 .field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    .scroll {
+        flex:1;
+        overflow: auto;
+    }
     &__title {
         font-size: 22px;
         font-weight: 600;
@@ -9,6 +17,7 @@
     &__box {
         display: flex;
         align-items: center;
+        padding: 5px;
     }
     &__img {
         width: 78px;

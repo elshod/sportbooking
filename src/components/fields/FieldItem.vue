@@ -1,5 +1,5 @@
 <template>
-  <div class="field__col">
+  <div class="field__col" @click="toggle">
       <div class="field__box">
           <div class="field__img" :style="{
               backgroundImage: `url('https://i.pinimg.com/564x/76/ad/d2/76add20d40376360429c5d3711eb97f6.jpg')`
@@ -15,7 +15,11 @@
 
 <script>
 export default {
-
+    methods: {
+        toggle(){
+            this.$store.dispatch('setViewToggle',true)
+        }
+    },
 }
 </script>
 

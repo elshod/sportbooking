@@ -1,11 +1,12 @@
 @import '../var.scss';
 
 .list {
-    margin-bottom: 40px;
+    .splide__track {
+        padding: 30px 0px;
+    }
     &__top {
         display: flex;
         align-items: center;
-        margin-bottom: 30px;
     }
     &__title {
         font-size: 22px;
@@ -36,8 +37,6 @@
         }
     }
     &__col {
-        @include fb(25%);
-        padding: 8px;
     }
     &__box {
         height: 300px;

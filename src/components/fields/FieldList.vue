@@ -1,7 +1,7 @@
 <template>
-  <div class="fields">
-      <div class="fields__title">Maydonlar</div>
-      <div class="row">
+  <div class="field">
+      <div class="field__title">Maydonlar</div>
+      <div class="row scroll">
           <FieldItem/>
           <FieldItem/>
           <FieldItem/>

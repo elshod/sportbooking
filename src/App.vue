@@ -4,9 +4,9 @@
     <div class="wrapper">
       <HeaderCom/>
       <SearchCom/>
-      <div class="scroll">
-        <router-view/>
-      </div>
+      <router-view/>
+      <FieldModal/>
+      <ViewModal/>
     </div>
   </div>
 </template>
@@ -15,15 +15,20 @@
 import SideBarVue from './components/SideBar.vue'
 import HeaderCom from './components/HeaderCom.vue'
 import SearchCom from './components/searchCom.vue'
+import FieldModal from './components/fields/FieldModal.vue'
+import ViewModal from './components/fields/ViewModal.vue'
 export default {
   components:{
     SideBarVue,
     HeaderCom,
-    SearchCom
+    SearchCom,
+    FieldModal,
+    ViewModal
 }
 }
 </script>
 
 <style lang="scss">
 @import './styles/main.scss';
+
 </style>
