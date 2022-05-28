@@ -1,0 +1,42 @@
+@import '../var.scss';
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    &__user {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        &--menu {
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            background:$lblue;
+            padding: 10px;
+            a {
+                color: #000;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+        &--profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-right: 15px;
+        }   
+        &--name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #666666;
+            margin-right: 16px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$blue:#16858D;
+$lblue:#ECFAFB;
+$red: #EF4444;
+
+@mixin bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin  fb($w) {
+    flex-basis: $w;
+    max-width: $w;
+    width:$w;
+}

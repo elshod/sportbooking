@@ -1,0 +1,64 @@
+@import '../var.scss';
+
+.side {
+    @include fb(18.75%);
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    &__logout {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        background: unset;
+        font-size: 16px;
+        font-weight: 700;
+        color: $red;
+        &:hover {
+            background-color: $red;
+            color: #fff;
+            img {
+                filter:brightness(0) invert(1);
+            }
+        }
+        img {
+            margin-right: 16px;
+        }
+    }
+    &__logo {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 60px;
+        span {
+            font-weight: 600;
+            color: $blue;
+        }
+    }
+    &__menu {
+        width: 100%;
+        a {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 12px;
+            margin-bottom: 18px;
+            font-size: 16px;
+            font-weight: 700;
+            &.router-link-active,
+            &:hover{
+                background-color: $lblue;
+                color: $blue;
+                img {
+                    filter: unset;
+                    opacity: 1;
+                }
+            }
+            img {
+                margin-right: 16px;
+                filter:brightness(0);
+                opacity: 0.5;
+            }
+        }
+    }
+}

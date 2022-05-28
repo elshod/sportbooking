@@ -1,0 +1,83 @@
+@import '../var.scss';
+
+.list {
+    margin-bottom: 40px;
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-right: 20px;
+    }
+    &__filtrs {
+        button {
+            background: unset;
+            padding: 0;
+            color: #666666;
+            font-size: 18px;
+            margin-right: 10px;
+            padding: 5px;
+            &.active {
+                color: #000;
+            }
+        }
+    }
+    &__filter{
+        margin-left: auto;
+        display: flex;
+        background:unset;
+        align-items: center;
+        padding: 0;
+        img {
+            margin-right: 8px;
+        }
+    }
+    &__col {
+        @include fb(25%);
+        padding: 8px;
+    }
+    &__box {
+        height: 300px;
+        border-radius: 24px;
+        padding: 16px;
+        position: relative;
+        display: flex;
+        @include bg;
+        flex-direction: column;
+        justify-content: end;
+        color: #fff;
+        overflow: hidden;
+        box-shadow: 0px 14px 20px 0px rgb(16,98,121,0.21);
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            height: 40%;
+            left: 0;
+            background: linear-gradient(0deg, rgba(7, 38, 47, 0.56) 0%, rgba(0,0,0,0) 100%);
+        }
+        &--title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            position: relative;
+            z-index: 2;
+        }
+        &--price {
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+        }
+        &--type {
+            position: relative;
+            z-index: 2;
+        }
+
+    }
+}

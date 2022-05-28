@@ -1,0 +1,24 @@
+@import '../var.scss';
+
+.field{
+    &__title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 78px;
+        height: 78px;
+        border-radius: 12px;
+        @include bg;
+        margin-right: 16px;
+    }
+    &__col {
+        @include fb(25%);
+        padding: 8px;
+    }
+}

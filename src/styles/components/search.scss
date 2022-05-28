@@ -1,0 +1,20 @@
+@import '../var.scss';
+
+.search {
+    display: flex;
+    background-color: #F1F1F6;
+    padding: 14px 19px;
+    border-radius: 16px;
+    align-items: center;
+    margin-bottom: 40px;
+    img {
+        margin-right: 16px;
+    }
+    input {
+        flex:1;
+        border:0;
+        background: unset;
+        padding: 0;
+        font-size: 16px;
+    }
+}
